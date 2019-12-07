@@ -7,6 +7,7 @@ import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Entity
 @Table(name = "influencer")
 @Data
@@ -23,6 +24,7 @@ public class Influencer {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "country_id", nullable = false)
     private Country country;
+
 
     /**
      * Here is added the field for the Personal Details Object of the Influencer
@@ -96,4 +98,10 @@ public class Influencer {
         }
         reviews.add(review);
     }
+
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "personal_details_id", nullable = false)
+    private PersonalDetails personalDetails;
+
+
 }
