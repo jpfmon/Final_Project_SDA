@@ -4,3 +4,4 @@ Technolgies we used: Maven, Spring Boot, Spring JPA, Spring Security, Lombok, My
 We also used some app templates from www.cleanuitemplate.com, adapting it to our needs.
 This is a CRM web app to manage relation with Influencers, according to the specific needs of the Influencer Marketing Manager. 
 The program can perform all CRUD operations for "products", "countries", and "influencers".
+Included in this respository there's a short video demonstration of the web app
